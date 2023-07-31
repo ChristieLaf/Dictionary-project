@@ -10,6 +10,7 @@ export default function Dictionary() {
   function handleResponse(response) {
     console.log(response.data[0]);
     console.log(response.data[0].meanings[0].definitions[0].definition);
+    console.log(response.data.meanings[0].definitions[0].synonyms);
     setResults(response.data[0]);
   }
 
