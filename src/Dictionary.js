@@ -8,9 +8,12 @@ export default function Dictionary() {
   let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
+    console.log(response.data);
     console.log(response.data[0].meanings[0].definitions[0].definition);
-    console.log(response.data.meanings[0].definitions[0].synonyms);
+    console.log(
+      response.data.meanings?.[0]?.definitions?.[0]?.synonyms ||
+        "No synonyms available"
+    );
     setResults(response.data[0]);
   }
 
