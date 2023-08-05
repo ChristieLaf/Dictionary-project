@@ -1,5 +1,5 @@
 body {
-  background: #f9f8fe;
+  background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
 }
 
 p {
@@ -9,6 +9,10 @@ p {
 .App {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.App img {
+  background: crimson;
 }
 
 .App-header {
